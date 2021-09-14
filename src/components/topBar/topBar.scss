@@ -1,0 +1,113 @@
+@import "../../App";
+.topbar{
+    width:100%;
+    background:$bg-color;
+    position:relative;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    .navbar-container__grid{
+        display:grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        justify-content:space-between;
+        height:100%;
+        align-items: center;
+        font-size:1.2rem;
+        .list-links__container{
+            .icon-btn{
+                cursor:pointer;
+            }
+            &>ul{
+               list-style:none;
+               position:absolute;
+               left: 0;
+               top:100%;
+               width: 100%;
+               background:$bg-color;
+               font-family:$fontFamily1;
+               font-size:1.3rem;
+               transition:all .3s ease-in;
+               z-index:999;
+               ul{
+                   list-style:none;
+                   display: flex;
+                   gap:2rem;
+                   justify-content: center;
+                   
+               }
+               @media screen and (min-width:"768px") {
+                   width:30%;
+                   
+               }
+               li {
+                   text-align: center;
+                   &.search-item{
+                       padding:1rem 0;
+                       input{
+                            padding:.6rem .5rem;
+                            margin-right:.5rem;
+                            border:none;
+                            outline:none;
+                            border-radius: 3px;
+                            background:#e9e9e9;
+                            font-size:1rem;
+                       }
+                       i{
+                           color:$txt-color;
+                           cursor: pointer;
+                       }
+                   }
+                a{
+                    color:$txt-color;
+                    text-decoration:none;
+                    display:inline-block;
+                    padding:1rem 0;
+                }
+               }
+            }
+        }
+        .blog-logo{
+            text-align:center;
+        }
+        .btn-register{
+            display:flex;
+            gap:2rem;
+            align-items:center;
+            justify-content: end;
+            button{
+                display:none;
+                background:rgb(19, 95, 167);
+                border:none;
+                outline:none;
+                padding:.8rem 2rem;
+                border-radius:.3rem;
+                color:$bg-color;
+                cursor:pointer;
+                font-size:1.1rem;
+                @media (min-width:$phone) {
+                    display:block;
+                }
+            }
+        }
+        .profile-users{
+            width:50px;
+            height:50px; 
+            cursor:pointer;
+            img{
+                width:100%;
+                height:100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+
+
+//hight classes 
+.topbar .navbar-container__grid .list-links__container > ul.hide-width{
+    width:0;
+    overflow: hidden;
+    opacity:0;
+}

@@ -1,0 +1,27 @@
+//the sizes 
+$phone:"768px";
+//the colors used
+$bg-color:#fff;
+$txt-color:#000;
+$pa-color:#6f6f6f;
+//font family
+$fontFamily1:"Roboto", "sans-serif";
+$fontFamily2:"Lora", "sans-serif";
+$fontFamily3:"Varela", "sans-serif";
+$fontFamily4:"Varela Round", "sans-serif";
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+//specific classes
+
+.center-elements{
+    padding-right: 1.2rem;
+    padding-left:1.2rem;
+    @media screen and (min-width:$phone) {
+        padding-right: 3.5rem;
+        padding-left:3.5rem;
+    }
+}

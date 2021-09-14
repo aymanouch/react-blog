@@ -1,0 +1,48 @@
+@import "../../App";
+#sidebar{
+    flex:3;
+    padding-right:3rem;
+    padding-bottom:2rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    .sidebar-item{
+        .sidebar-title{
+            margin-bottom:1.5rem;
+            font-family: $fontFamily2;
+            text-transform: uppercase;
+        }
+        p{
+            color:$pa-color;
+            font-family: $fontFamily1;
+            padding:1rem 0;
+            line-height: 1.6rem;
+        }
+        ul{
+            list-style:none;
+            line-height: 2rem;
+            font-family: $fontFamily1;
+            font-size: 1.2rem;
+            color:$pa-color;
+            &.cat-list{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    width:50%;
+                    text-align: center;
+                }
+            }
+        }
+        ul.links-media{
+            display:flex;
+            justify-content: center;
+            gap:1.2rem;
+            a{
+                color:$txt-color;
+            }
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+}
