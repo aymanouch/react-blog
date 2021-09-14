@@ -73,6 +73,12 @@
             gap:2rem;
             align-items:center;
             justify-content: end;
+            .login-btn{
+                display: none;
+                @media (min-width:$phone) {
+                    display:block;
+                }
+            }
             button{
                 display:none;
                 background:rgb(19, 95, 167);

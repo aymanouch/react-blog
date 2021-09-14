@@ -25,3 +25,16 @@ $fontFamily4:"Varela Round", "sans-serif";
         padding-left:3.5rem;
     }
 }
+
+.center-left{
+    padding-left:1.2rem;
+    @media screen and (min-width:$phone) {
+        padding-left:3.5rem;
+    }
+}
+.center-right{
+    padding-right:1.2rem;
+    @media screen and (min-width:$phone) {
+        padding-right:3.5rem;
+    }
+}

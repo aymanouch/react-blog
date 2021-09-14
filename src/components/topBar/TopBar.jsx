@@ -31,7 +31,7 @@ const TobBar = () => {
                 </div>
                 <div className="blog-logo">forbes</div>
                 <div className="btn-register">
-                    <a href="/">
+                    <a href="/" className="login-btn">
                         log in
                     </a>
                     <button>
